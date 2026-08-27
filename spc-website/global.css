@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-colour: rgb(17, 28, 152);
+    --secondary-colour: gold;
+    --trietary-colour: white;
+    --primary-shadow: rgb(44, 53, 149);
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.closeBtn {
+    background-color: red;
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnXrvTigIt1uarFYO8mXpWEGDyxL52W-dBLXpBCwgQKAGgFk9Rssy869QeIQNdInloa92rKuhXYa1Me318KFTnuTNuSXHVe_KlR6_IWMV5aCSxTInuwOCVSRJRzJOrCcPwnM6NX-WElIUU=s1360-w1360-h1020-rw');
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    color: var(--trietary-colour);
+    background-color: var(--primary-colour);
+    box-shadow: var(--primary-shadow) 3px 3px 0;
+    border: 1px solid var(--secondary-colour);
+    padding: 2px;
+    border-radius: 3px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+section {
+    background-color: var(--primary-colour);
+    margin: 6px;
+    color: var(--trietary-colour);
+    padding: 10px;
+    flex: 1;
+    /*min-*/height: 300px;
+    border-radius: 10px;
+    box-shadow: var(--primary-shadow) 5px 5px 0;
+    /*min-*/width:500px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-colour);
+    width: 1407px;
+    color: var(--trietary-colour);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+footer {
+    display: revert;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--primary-colour);
+    color: var(--trietary-colour);
+    text-align: center;
+}
+
+input {
+    width: 50%;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-colour);
+    color: var(--trietary-colour);
+    padding: 10px;
+    height: 145px;
+    width: 1375px;
+    align-self: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--primary-shadow) 5px 5px 0;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in forwards;
+}
+
+.pre-animation {
+    opacity: 0;
+}
+
+.fade-complete {
+    opacity: 1;
+}
