@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mana Movement Members</title>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="members.css">
+        <script src="main.js" defer></script>
+        <script src="page-sys.js" defer></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            const nav = document.querySelector('.nav');
+            const section = document.getElementById('section-c1');
+
+            section.classList.replace('pre-animation', 'fade-in');
+            await wait(250);
+            nav.classList.replace('pre-animation', 'fade-in');
+        });
+    </script>
+    </head>
+    <body>
+        <header>
+        <img src="logo.webp" width="100px"><hgroup>
+            <h1><i>MANA MOVEMENT</i></h1>
+            <p><i>LETS MAKE ST PATS GREAT AGAIN</i></p>
+        </hgroup>
+        <hr>
+        </header>
+        <main>
+            <section id="section-c1" class="pre-animation"> 
+                <hgroup>
+                <h2>Mason Dewar-Va'a</h2>
+                <p>MP of Environment</p>
+                </hgroup>
+                <hr>
+                <article class="content-c1">
+                <ul>
+                    <li><b>I’m a Year 9 student and the MP for Environment in the Mana Movement. I’m focused on keeping St Patrick’s College clean, green, and a better place for everyone.</b></li>
+
+                    <li><b>I believe looking after our environment is everyone’s responsibility, and together we can make positive changes around our school..</b></li>
+                    <li><b><a href="mailto:mason.dewarvaa@stpats.school.nz">Email</a></b></li>
+                </ul><img src="mason.png" height="250px">
+                </article>
+            </section>
+        </main>
+        <nav class="nav pre-animation">
+            <button onclick="window.location.href='index.html'">Back</button>
+            <cite>Left/Right Arrow to next page</cite>
+        </nav>
+        <footer>
+            <p><i>&copy; Mana Movement 2026</i></p>
+        </footer>
+    </body>
+</html>

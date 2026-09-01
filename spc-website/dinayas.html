@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mana Movement Members</title>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="members.css">
+        <script src="main.js" defer></script>
+        <script src="page-sys.js" defer></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            const nav = document.querySelector('.nav');
+            const section = document.getElementById('section-c1');
+
+            section.classList.remove('pre-animation');
+            section.classList.add('fade-in');
+            await wait(250);
+            nav.classList.remove('pre-animation');
+            nav.classList.add('fade-in');
+        });
+    </script>
+    </head>
+    <body>
+        <header>
+        <img src="logo.webp" width="100px"><hgroup>
+            <h1><i>MANA MOVEMENT</i></h1>
+            <p><i>LETS MAKE ST PATS GREAT AGAIN</i></p>
+        </hgroup>
+        <hr>
+        </header>
+        <main>
+            <section id="section-c1" class="pre-animation"> 
+                <hgroup>
+                <h2>Dinayas Asefa</h2>
+                <p>Party Leader</p>
+                </hgroup>
+                <hr>
+                <article class="content-c1">
+                <ul>
+                    <li><b>I’m a Year 9 student and the Party Leader of the Mana Movement. I’m here to listen to students, stand up for their ideas, and help make positive changes at St Patrick’s College.</b></li>
+
+                    <li><b>I believe every student should have the support, opportunities, and confidence to succeed and I’m excited to help make that happen. I believe that children here need to learn what they want to learn.</b></li>
+                    <li><b><a href="mailto:dinayas.asefa@stpats.school.nz">Email</a></b></li>
+                </ul><img src="dinayas.png" height="250px">
+                </article>
+            </section>
+        </main>
+        <nav class="nav pre-animation">
+            <button onclick="window.location.href='index.html'">Back</button>
+            <cite>Left/Right Arrow to next page</cite>
+        </nav>
+        <footer>
+            <p><i>&copy; Mana Movement 2026</i></p>
+        </footer>
+    </body>
+</html>

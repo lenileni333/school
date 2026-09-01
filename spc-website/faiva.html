@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mana Movement Members</title>
+        <link rel="stylesheet" href="global.css">
+        <script src="main.js" defer></script>
+        <script src="page-sys.js" defer></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            const nav = document.querySelector('.nav');
+            const section = document.getElementById('section-c2');
+
+            section.classList.replace('pre-animation', 'fade-in');
+            await wait(250);
+            nav.classList.replace('pre-animation', 'fade-in');
+        });
+    </script>
+    </head>
+    <body>
+        <header>
+        <img src="logo.webp" width="100px"><hgroup>
+            <h1><i>MANA MOVEMENT</i></h1>
+            <p><i>LETS MAKE ST PATS GREAT AGAIN</i></p>
+        </hgroup>
+        <hr>
+        </header>
+        <main>
+            <section id="section-c2" class="pre-animation"> 
+                <hgroup>
+                <h2>Faiva Eli</h2>
+                <p>MP of Sports and Recreation</p>
+                </hgroup>
+                <hr>
+                <article class="content-c1">
+                <ul>
+                    <li><b>I’m a Year 9 student and the MP for Sport & Recreation in the Mana Movement. I’m focused on making sport and recreation more enjoyable, exciting, and accessible for everyone.</b></li>
+
+                    <li><b>I believe sport brings students together, builds teamwork, and gives everyone a chance to get involved and have fun.</b></li>
+                    <li><b><a href="mailto:jerimiah.eli@stpats.school.nz">Email</a></b></li>
+                    <li><aside><strong>NOTE:</strong> Faiva has requested to have no photo.</aside></li>
+                
+                </ul><!--img src="daniel.png" height="200px"-->
+                <!--
+                    Faiva has requested to have no photo in his page.
+                -->
+                </article>
+            </section>
+        </main>
+        <nav class="nav pre-animation">
+            <button onclick="window.location.href='index.html'">Back</button>
+            <cite>Left/Right Arrow to next page</cite>
+        </nav>
+        <footer>
+            <p><i>&copy; Mana Movement 2026</i></p>
+        </footer>
+    </body>
+</html>
